@@ -9,7 +9,8 @@ https://habrahabr.ru/post/246383/
 2) 
 https://nlpub.ru/
 https://github.com/nlpub
-3) ...
+3) Map in memory
+4) ...
 
 Commercial:
 https://startpack.ru/ 
