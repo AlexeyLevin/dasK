@@ -10,7 +10,19 @@ https://habrahabr.ru/post/246383/
 https://nlpub.ru/
 https://github.com/nlpub
 3) Map in memory
-4) ...
+4) 
+input: BOM? formatting?
+regExp separator, 
+
+fis to Map <String, Class> 
+
+Class {
+List<Integer> lines; 
+List<Integer> pages;
+}
+
+output -> result to DB
+view - html
 
 Commercial:
 https://startpack.ru/ 
