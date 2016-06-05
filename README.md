@@ -14,7 +14,7 @@ https://github.com/nlpub
 input: BOM? formatting?
 regExp separator, 
 
-"fis to Map <String, Class>" 
+fis to Map <String, Class>
 
 Class {
 List<Integer> lines; 
