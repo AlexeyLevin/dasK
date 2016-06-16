@@ -2,9 +2,13 @@ package com.alev.dask.to;
 
 import com.alev.dask.domain.Lexeme;
 import com.alev.dask.domain.Text;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.List;
 
+@Getter
+@Setter
 public class TextTo {
     private Integer id = null;
     private String name = null;
@@ -21,37 +25,5 @@ public class TextTo {
         text.setContent(textTo.getContent());
         text.setLexemes(textTo.getLexemes());
         return text;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public List<Lexeme> getLexemes() {
-        return lexemes;
-    }
-
-    public void setLexemes(List<Lexeme> lexemes) {
-        this.lexemes = lexemes;
     }
 }
