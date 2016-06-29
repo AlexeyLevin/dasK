@@ -1,22 +1,19 @@
 package com.alev.dask.domain;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
 @Getter
 @Setter
+@NoArgsConstructor
 public class Text extends NamedEntity {
     private String content;
-    private List<Lexeme> lexemes;
+    private List<String> sentences;
+    private List<String> words;
+    private List<Token> tokens;
 
-    public Text() {
-    }
-
-    public Text(Integer id, String name, String content, List<Lexeme> lexemes) {
+    public Text(Integer id, String name) {
         super(id, name);
-        this.content = content;
-        this.lexemes = lexemes;
     }
 }

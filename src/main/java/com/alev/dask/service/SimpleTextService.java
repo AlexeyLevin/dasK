@@ -2,7 +2,7 @@ package com.alev.dask.service;
 
 import com.alev.dask.domain.Text;
 import com.alev.dask.to.TextTo;
-import com.alev.dask.util.NlpProcessingUtil;
+import com.alev.dask.util.NlpUtil;
 
 public class SimpleTextService implements TextService {
     @Override
@@ -22,7 +22,7 @@ public class SimpleTextService implements TextService {
 
     @Override
     public Text create(String fileName, TextTo textTo) {
-        Text indexing = NlpProcessingUtil.indexing(fileName, textTo);
+        Text indexing = NlpUtil.indexing(fileName, textTo);
         save(indexing);
         return indexing;
     }
