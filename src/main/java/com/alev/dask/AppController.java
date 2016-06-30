@@ -4,6 +4,8 @@ import com.alev.dask.domain.Text;
 import com.alev.dask.service.TextService;
 import com.alev.dask.to.TextTo;
 
+import java.nio.charset.Charset;
+
 public class AppController {
     public TextService textService;
 
@@ -15,9 +17,9 @@ public class AppController {
         return textService.get(id);
     }
 
-    public void create(String fileName, String textName) {
+    public void create(String fileName, String textName, Charset charset) {
         TextTo textTo = new TextTo();
         textTo.setName(textName == null || textName.isEmpty() ? fileName : textName);
-        textService.create(fileName, textTo);
+        textService.create(fileName, textTo, charset);
     }
 }

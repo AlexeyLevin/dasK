@@ -4,6 +4,8 @@ import com.alev.dask.domain.Text;
 import com.alev.dask.to.TextTo;
 import com.alev.dask.util.NlpUtil;
 
+import java.nio.charset.Charset;
+
 public class SimpleTextService implements TextService {
     @Override
     public Text findByName(String name) {
@@ -21,8 +23,8 @@ public class SimpleTextService implements TextService {
     }
 
     @Override
-    public Text create(String fileName, TextTo textTo) {
-        Text indexing = NlpUtil.indexing(fileName, textTo);
+    public Text create(String fileName, TextTo textTo, Charset charset) {
+        Text indexing = NlpUtil.indexing(fileName, textTo, charset);
         save(indexing);
         return indexing;
     }
